@@ -92,9 +92,24 @@ class Engine:
             print("Invalid mode")
 
         pygame.display.flip()
-    
-        
-    
 
-        
+        def run(self):
+            #Main loop
+            while not self.exited:
+                self.clock.tick(self.maxFPS)
+                self.recent_frame_times.append(self.clock.get_time())
 
+                if self.mode == 0:
+                    self.execute_menutick()
+                elif self.mode == 1:
+                    self.execute_gametick()
+                #elif self.mode == 2:
+                #    self.execute_cardtick()
+                else:
+                    print("Invalid mode")
+                self.execute_render()
+            
+            pygame.quit()
+    
+instance = Engine(60)
+instance.run() 
