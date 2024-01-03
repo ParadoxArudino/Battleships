@@ -8,7 +8,7 @@
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "C:\\Users\\Daniel\\OneDrive - The Howard Partnership Trust\\School work\\Computing\\Programming\\Y12 Programming python\\10. Battleships\\Battleships",
+            "program": "C:\\GitHub Repositories\\Battleships",
             "console": "integratedTerminal",
             "justMyCode": true
         }
